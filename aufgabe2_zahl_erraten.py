@@ -1,15 +1,13 @@
-# Aufgabe 2
-
 import random
 
 
 def game():
     user_choice_str = input("Wähle eine ganze Zahl zwischen 1 und 10! ")
-    user_choice = int(user_choice_str)
-
     if not user_choice_str.isdigit():
-        print("Keine gültige Zahl! Probiere nochmal")
+        print("Keine gültige Zahl! Probiere nochmal!")
         game()
+
+    user_choice = int(user_choice_str)
 
     if not (
         (user_choice == 1)
@@ -33,10 +31,7 @@ def game():
             f"Glückwunsch! Das Computer hat auch die {compu_choice} gewählt. Du hast gewonnen!"
         )
     else:
-        print(
-            f"Das Computer hat die {compu_choice} gewählt. Du hast leider verloren. Probiere noch einmal!"
-        )
-        game()
+        print(f"Das Computer hat die {compu_choice} gewählt. Du hast leider verloren.")
 
 
 game()
