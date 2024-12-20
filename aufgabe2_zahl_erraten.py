@@ -4,8 +4,8 @@ import random
 def game():
     user_choice_str = input("Wähle eine ganze Zahl zwischen 1 und 10! ")
     if not user_choice_str.isdigit():
-        print("Keine gültige Zahl! Probiere nochmal!")
-        game()
+        print("Ungültige Angabe! Probiere nochmal!")
+        return
 
     user_choice = int(user_choice_str)
 
@@ -21,8 +21,8 @@ def game():
         or (user_choice == 9)
         or (user_choice == 10)
     ):
-        print("Ungültige Angabe! Probiere nochmal!")
-        game()
+        print("Keine gültige Zahl! Probiere nochmal!")
+        return
 
     compu_choice = random.choice([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
 
