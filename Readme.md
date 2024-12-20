@@ -11,6 +11,6 @@ Programmierung abdecken.
 ## Nutzungshinweise
 ...
 ## Teammitglieder
-Weisong - Aufgabe 1
-Zsuzsa - Aufgabe 2
-Senda - Aufgabe 4
+- Weisong - Aufgabe 1
+- Zsuzsa - Aufgabe 2
+- Senda - Aufgabe 4
